@@ -1,7 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import 'reset.css';
+
 html, body {
   margin: 0;
   padding: 0;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-weight: 500;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  opacity: 0.5;
+  text-decoration: underline;
+}
+
 canvas {
   display: block;
+}
+
+.container {
+  position: absolute;
+  height: 110vh;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.container__line {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__line:first-of-type {
+  position: absolute;
+  top:0;
+  margin-top: 2.4%;
+}
+
+.container__line:nth-of-type(2) {
+  position: absolute;
+  align-items: stretch;
+  bottom: 9%;
+  margin-bottom: 2.4%;
+}
+
+.container__line__first{
+  margin-left: 2.4%;
+}
+
+.container__line__second {
+  display: flex;
+  margin-right: 2.4%;
+}
+
+.container__line__second__img {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+
+.container__line__second__text {
+  align-items: flex-end;
+  width: 28%;
+}
+
+.container__line__second__inf{
+  text-align: end;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.window {
+  position: absolute;
+  top: 22%;
+  left: 28%;
+  width: 40%;
+  color: #1D1D1D;
+  background-color: white;
+  padding: 4vw 3vw;
+  border-radius: 24px;
+  display: none;
+}
+
+.window__cross {
+  text-align: end;
+  cursor: pointer;
+}
+
+.window__text {
+  margin-top: 8px;
+  margin-bottom: 56px;
+}
+
+.window__text h2 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: #1D1D1D;
+  margin-bottom: 8px;
+}
+
+.window__text p {
+  font-size: 16px;
+  text-align: center;
+  color: #1D1D1D;
+  font-weight: 400;
+}
+
+.window__close {
+  justify-content: flex-end;
+  display: flex;
+  cursor: pointer;
+}
+
+.window__close__item {
+  color: white;
+  background-color: black;
+  padding: 8px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.window__close__item:hover {
+  opacity: 0.6;
 }
